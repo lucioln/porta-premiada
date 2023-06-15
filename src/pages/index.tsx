@@ -23,7 +23,7 @@ export default function Home() {
           <EntrdaNumerica value={portaPremiada} text="Porta premiada? " onChange={(nPorta) => setPortaPremiada(nPorta)} />
         </Cartao>
         <Cartao bgcolor="#28a085">
-          <Link href={`/jogo/${qtdePortas}/${portaPremiada}`}>
+          <Link href={`/jogo/${qtdePortas}/${portaPremiada}`} passHref>
             <h2 className={styles.link}>Iniciar</h2>
           </Link>
         </Cartao>
