@@ -1,0 +1,33 @@
+.presente{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topo{
+    width: 100px;
+    height: 25px;
+    background-color: #7aa944;
+}
+
+.corpo{
+    width: 90px;
+    height: 60px;
+    background-color: #5c7e32;
+}
+
+.laco1 {
+    position: absolute;
+    background-color: red;
+    height: 85px;
+    width: 15px;
+}
+
+.laco2{
+    position: absolute;
+    top: 40px;
+    background-color: red;
+    width: 90px;
+    height: 15px;
+}
