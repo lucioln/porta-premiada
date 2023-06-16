@@ -1,4 +1,4 @@
-import PortaModel from "../model/porta";
+import PortaModel from "../model/porta"
 
 export function criarPortas(qtde: number, comPresente: number): PortaModel[]{
     return Array.from({ length: qtde}, (_, i) =>{

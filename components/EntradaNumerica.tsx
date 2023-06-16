@@ -1,4 +1,5 @@
-import styles from '../../styles/EntradaNumerica.module.css'
+import styles from "../src/styles/EntradaNumerica.module.css"
+
 
 interface EntrdaNumericaProps {
     text: string
@@ -6,7 +7,7 @@ interface EntrdaNumericaProps {
     onChange: (newValue: number) => void
 }
 
-export default function EntrdaNumerica(props: EntrdaNumericaProps) {
+export default function EntradaNumerica(props: EntrdaNumericaProps) {
 
     const dec = () => props.onChange(props.value -1)
     const inc = () => props.onChange(props.value +1)

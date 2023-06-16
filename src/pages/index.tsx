@@ -1,8 +1,8 @@
 import styles from "../styles/Home.module.css"
 
-import Cartao from "./components/Cartao"
+import Cartao from "../../components/Cartao"
 import Link from "next/link"
-import EntrdaNumerica from "./components/EntradaNumerica"
+import EntradaNumerica from "../../components/EntradaNumerica"
 import { useState } from "react"
 
 export default function Home() {
@@ -15,12 +15,12 @@ export default function Home() {
       <div>
         <Cartao bgcolor="#c0392c"> <h1>Monty Hall</h1></Cartao>
         <Cartao>
-          <EntrdaNumerica value={qtdePortas} text="Qtd portas? " onChange={(novaQtd) => setQtdePortas(novaQtd)} />
+          <EntradaNumerica value={qtdePortas} text="Qtd portas? " onChange={(novaQtd) => setQtdePortas(novaQtd)} />
         </Cartao>
       </div>
       <div>
         <Cartao>
-          <EntrdaNumerica value={portaPremiada} text="Porta premiada? " onChange={(nPorta) => setPortaPremiada(nPorta)} />
+          <EntradaNumerica value={portaPremiada} text="Porta premiada? " onChange={(nPorta) => setPortaPremiada(nPorta)} />
         </Cartao>
         <Cartao bgcolor="#28a085">
           <Link href={`/jogo/${qtdePortas}/${portaPremiada}`} passHref>
